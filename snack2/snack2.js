@@ -55,14 +55,14 @@ function getRndInteger(min, max) {
 
 //replace team goals and fauls with a random integer
 for (let team of teams){
-    team.goals = getRndInteger(0, 15)
-    team.fauls = getRndInteger(0, 25)
+    team.goals = getRndInteger(0, 15);
+    team.fauls = getRndInteger(0, 25);
 }
 
 //create another array with team's name and fauls
-const faulList = []
+const faulList = [];
 for (let team of teams){
     faulList.push({teamName : team.teamName, fauls : team.fauls})
 }
 
-console.log(faulList)
+console.log(faulList);

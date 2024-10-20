@@ -32,19 +32,19 @@ const bikes = [
     },
 ]
 
-let lighterBike = bikes[0]
-let minWheightFound = bikes[0].wheight
+let lighterBike = bikes[0];
+let minWheightFound = bikes[0].wheight;
 
-const bikesLength = bikes.length
+const bikesLength = bikes.length;
 for (let i = 1; i < bikesLength; i ++){
-    const bike = bikes[i]
-    const bikeWheight = bike.wheight
-    console.log(bike)
+    const bike = bikes[i];
+    const bikeWheight = bike.wheight;
+    console.log(bike);
     if (minWheightFound > bikeWheight){
         lighterBike = bike;
-        minWheightFound = bikeWheight
+        minWheightFound = bikeWheight;
     }
 }
 
-console.log(`Il vincitore è ${lighterBike.name} con un peso di soli ${minWheightFound}kg`)
-console.log(lighterBike)
+console.log(`Il vincitore è ${lighterBike.name} con un peso di soli ${minWheightFound}kg`);
+console.log(lighterBike);
