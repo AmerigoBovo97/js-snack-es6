@@ -37,6 +37,7 @@ function getSublist(originalList, minIndex = 0, maxIndex = originalList.length -
 
     if (minIndex < 0) minIndex *= -1;
     if (maxIndex < 0) maxIndex *= -1;
+    if (maxIndex > originalList.length) maxIndex = originalList.length;
     
     const newList = [];
     while (minIndex <= maxIndex){
